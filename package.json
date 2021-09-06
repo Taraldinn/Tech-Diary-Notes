@@ -1,0 +1,20 @@
+{
+  "name": "test_folder_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tw:watch": "tailwindcss -i app.src.css -o app.dist.css --watch",
+    "tw:build": "tailwindcss -i app.src.css -o app.dist.css --minify",
+    "start": "concurrently \"npm run tw:watch\" \"live-server --port=8081\""
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^2.2.9"
+  },
+  "dependencies": {
+    "concurrently": "^6.2.1"
+  }
+}
